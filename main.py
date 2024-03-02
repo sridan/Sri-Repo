@@ -9,7 +9,15 @@ def return_characters(message):
 
   return even_index
 
+def reverse_string(message):
+    
+    new_str = message[::-1]
+    
+    return new_str    
+
 message = input('Enter any string:')
 print(f'Characters present at even index number are:{return_characters(message)}')
 #Print the length of the string.
 print(f'The length of the string is:{len(message)}')
+#printsthe reverse of the string
+print(f'Reversed String is:{reverse_string(message)}')
